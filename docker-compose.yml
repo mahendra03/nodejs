@@ -6,7 +6,7 @@ services:
         ports:
             - "8888:8888"
         volumes:
-            - ./haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg
+            - ./haproxy:/usr/local/etc/haproxy
     nodeapp1:
         image: nodeapp
         environment:
