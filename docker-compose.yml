@@ -8,10 +8,10 @@ services:
         volumes:
             - ./haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg
     nodeapp1:
-        image: nodeapp
+        image: mahendrarathore20/nodeapp
         environment:
             - APPID=1111
     nodeapp2:
-        image: nodeapp
+        image: mahendrarathore20/nodeapp
         environment:
             - APPID=2222
