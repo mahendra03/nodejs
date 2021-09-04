@@ -4,8 +4,8 @@ WORKDIR /app
 
 COPY package.json ./
 
+COPY index.js ./
+
 RUN npm install
 
-COPY . .
-
-CMD ["node","index.js"]
+CMD npm run app
